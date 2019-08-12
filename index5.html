@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body onload="findStar(prompt('Nhap vao ngoi sao ban dang tim kiem '))">
+<script>
+    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+
+    let other_star = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+
+    function findStar(a) {
+        for (i = 0 ;i <= star.length ;i++){
+            if (a == star[i]){
+                //console.log(other_star[i]);
+
+                alert(a+" "+other_star[i]);
+            }else{
+                alert("Ten ngoi sao khong dung");break
+            }
+        }
+    }
+</script>
+</body>
+</html>
